@@ -10,6 +10,10 @@ import {
   DifficultyItem,
 } from "./MenuItem.styled.jsx";
 
+import { IoIosTime } from "react-icons/io";
+import { GiMeat } from "react-icons/gi";
+import { RiServiceBellFill } from "react-icons/ri";
+
 export const MenuItem = ({
   title,
   image,
@@ -25,9 +29,9 @@ export const MenuItem = ({
       <Title>{title}</Title>
 
       <InfoList>
-        <InfoItem>{time}</InfoItem>
-        <InfoItem>{servings} servings</InfoItem>
-        <InfoItem>{calories} calories</InfoItem>
+        <InfoItem><IoIosTime/>{time}</InfoItem>
+        <InfoItem><RiServiceBellFill/>{servings} servings</InfoItem>
+        <InfoItem> <GiMeat/>{calories} calories</InfoItem>
       </InfoList>
 
       <DifficultyBlock>

@@ -3,7 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://lev-voronovych.github.io/goit-hw-react-5/",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
@@ -12,6 +15,7 @@
   "dependencies": {
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
+    "react-icons": "^5.6.0",
     "styled-components": "^6.4.1"
   },
   "devDependencies": {
@@ -22,6 +26,7 @@
     "eslint": "^10.2.1",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.2",
+    "gh-pages": "^6.3.0",
     "globals": "^17.5.0",
     "vite": "^8.0.10"
   }
